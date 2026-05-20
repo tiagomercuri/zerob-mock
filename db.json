@@ -83,38 +83,10 @@
           "tituloQuestao": "Como você percebe sua interação com os demais membros do time?",
           "obrigatoria": true,
           "alternativas": [
-            {
-              "alternativaNumero": 1,
-              "ordem": 1,
-              "letra": "A",
-              "valor": 100,
-              "tituloAlternativa": "Totalmente Satisfatória",
-              "descricaoAlternativa": "Totalmente Satisfatória"
-            },
-            {
-              "alternativaNumero": 2,
-              "ordem": 2,
-              "letra": "B",
-              "valor": 70,
-              "tituloAlternativa": "Satisfatória",
-              "descricaoAlternativa": "Satisfatória"
-            },
-            {
-              "alternativaNumero": 3,
-              "ordem": 3,
-              "letra": "C",
-              "valor": 40,
-              "tituloAlternativa": "Indiferente",
-              "descricaoAlternativa": "Indiferente"
-            },
-            {
-              "alternativaNumero": 4,
-              "ordem": 4,
-              "letra": "D",
-              "valor": 10,
-              "tituloAlternativa": "Insatisfatória",
-              "descricaoAlternativa": "Insatisfatória"
-            }
+            { "alternativaNumero": 1, "ordem": 1, "valor": 100, "tituloAlternativa": "Totalmente Satisfeito" },
+            { "alternativaNumero": 2, "ordem": 2, "valor": 70, "tituloAlternativa": "Satisfeito" },
+            { "alternativaNumero": 3, "ordem": 3, "valor": 40, "tituloAlternativa": "Não Satisfeito" },
+            { "alternativaNumero": 4, "ordem": 4, "valor": 10, "tituloAlternativa": "Indiferente" }
           ]
         },
         {
@@ -124,47 +96,24 @@
           "tituloQuestao": "Como você avalia a colaboração e apoio mútuo dentro do seu time?",
           "obrigatoria": true,
           "alternativas": [
-            {
-              "alternativaNumero": 1,
-              "ordem": 1,
-              "letra": "A",
-              "valor": 100,
-              "tituloAlternativa": "Totalmente Satisfatória",
-              "descricaoAlternativa": "Totalmente Satisfatória"
-            },
-            {
-              "alternativaNumero": 2,
-              "ordem": 2,
-              "letra": "B",
-              "valor": 70,
-              "tituloAlternativa": "Satisfatória",
-              "descricaoAlternativa": "Satisfatória"
-            },
-            {
-              "alternativaNumero": 3,
-              "ordem": 3,
-              "letra": "C",
-              "valor": 40,
-              "tituloAlternativa": "Indiferente",
-              "descricaoAlternativa": "Indiferente"
-            },
-            {
-              "alternativaNumero": 4,
-              "ordem": 4,
-              "letra": "D",
-              "valor": 10,
-              "tituloAlternativa": "Insatisfatória",
-              "descricaoAlternativa": "Insatisfatória"
-            }
+            { "alternativaNumero": 1, "ordem": 1, "valor": 100, "tituloAlternativa": "Totalmente Satisfeito" },
+            { "alternativaNumero": 2, "ordem": 2, "valor": 70, "tituloAlternativa": "Satisfeito" },
+            { "alternativaNumero": 3, "ordem": 3, "valor": 40, "tituloAlternativa": "Não Satisfeito" },
+            { "alternativaNumero": 4, "ordem": 4, "valor": 10, "tituloAlternativa": "Indiferente" }
           ]
         },
         {
           "numero": 3,
           "etapa": 1,
-          "tipoQuestao": "S",
-          "tituloQuestao": "O que poderia melhorar na dinâmica do seu time?",
-          "obrigatoria": false,
-          "alternativas": []
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia a comunicação interna dentro do seu time?",
+          "obrigatoria": true,
+          "alternativas": [
+            { "alternativaNumero": 1, "ordem": 1, "valor": 100, "tituloAlternativa": "Totalmente Satisfeito" },
+            { "alternativaNumero": 2, "ordem": 2, "valor": 70, "tituloAlternativa": "Satisfeito" },
+            { "alternativaNumero": 3, "ordem": 3, "valor": 40, "tituloAlternativa": "Não Satisfeito" },
+            { "alternativaNumero": 4, "ordem": 4, "valor": 10, "tituloAlternativa": "Indiferente" }
+          ]
         },
         {
           "numero": 4,
@@ -173,47 +122,24 @@
           "tituloQuestao": "Como você avalia os benefícios oferecidos pela empresa?",
           "obrigatoria": true,
           "alternativas": [
-            {
-              "alternativaNumero": 1,
-              "ordem": 1,
-              "letra": "A",
-              "valor": 100,
-              "tituloAlternativa": "Muito satisfatório",
-              "descricaoAlternativa": "Muito satisfatório"
-            },
-            {
-              "alternativaNumero": 2,
-              "ordem": 2,
-              "letra": "B",
-              "valor": 70,
-              "tituloAlternativa": "Satisfatório",
-              "descricaoAlternativa": "Satisfatório"
-            },
-            {
-              "alternativaNumero": 3,
-              "ordem": 3,
-              "letra": "C",
-              "valor": 40,
-              "tituloAlternativa": "Parcialmente satisfatório",
-              "descricaoAlternativa": "Parcialmente satisfatório"
-            },
-            {
-              "alternativaNumero": 4,
-              "ordem": 4,
-              "letra": "D",
-              "valor": 10,
-              "tituloAlternativa": "Insatisfatório",
-              "descricaoAlternativa": "Insatisfatório"
-            }
+            { "alternativaNumero": 1, "ordem": 1, "valor": 100, "tituloAlternativa": "Totalmente Satisfeito" },
+            { "alternativaNumero": 2, "ordem": 2, "valor": 70, "tituloAlternativa": "Satisfeito" },
+            { "alternativaNumero": 3, "ordem": 3, "valor": 40, "tituloAlternativa": "Não Satisfeito" },
+            { "alternativaNumero": 4, "ordem": 4, "valor": 10, "tituloAlternativa": "Indiferente" }
           ]
         },
         {
           "numero": 5,
           "etapa": 2,
-          "tipoQuestao": "S",
-          "tituloQuestao": "Qual benefício você gostaria que a empresa oferecesse?",
-          "obrigatoria": false,
-          "alternativas": []
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia o plano de saúde e os benefícios de bem-estar?",
+          "obrigatoria": true,
+          "alternativas": [
+            { "alternativaNumero": 1, "ordem": 1, "valor": 100, "tituloAlternativa": "Totalmente Satisfeito" },
+            { "alternativaNumero": 2, "ordem": 2, "valor": 70, "tituloAlternativa": "Satisfeito" },
+            { "alternativaNumero": 3, "ordem": 3, "valor": 40, "tituloAlternativa": "Não Satisfeito" },
+            { "alternativaNumero": 4, "ordem": 4, "valor": 10, "tituloAlternativa": "Indiferente" }
+          ]
         },
         {
           "numero": 6,
@@ -222,38 +148,10 @@
           "tituloQuestao": "Como você avalia as ferramentas e recursos disponíveis para seu trabalho?",
           "obrigatoria": true,
           "alternativas": [
-            {
-              "alternativaNumero": 1,
-              "ordem": 1,
-              "letra": "A",
-              "valor": 100,
-              "tituloAlternativa": "Excelentes",
-              "descricaoAlternativa": "Excelentes"
-            },
-            {
-              "alternativaNumero": 2,
-              "ordem": 2,
-              "letra": "B",
-              "valor": 70,
-              "tituloAlternativa": "Boas",
-              "descricaoAlternativa": "Boas"
-            },
-            {
-              "alternativaNumero": 3,
-              "ordem": 3,
-              "letra": "C",
-              "valor": 40,
-              "tituloAlternativa": "Regulares",
-              "descricaoAlternativa": "Regulares"
-            },
-            {
-              "alternativaNumero": 4,
-              "ordem": 4,
-              "letra": "D",
-              "valor": 10,
-              "tituloAlternativa": "Ruins",
-              "descricaoAlternativa": "Ruins"
-            }
+            { "alternativaNumero": 1, "ordem": 1, "valor": 100, "tituloAlternativa": "Totalmente Satisfeito" },
+            { "alternativaNumero": 2, "ordem": 2, "valor": 70, "tituloAlternativa": "Satisfeito" },
+            { "alternativaNumero": 3, "ordem": 3, "valor": 40, "tituloAlternativa": "Não Satisfeito" },
+            { "alternativaNumero": 4, "ordem": 4, "valor": 10, "tituloAlternativa": "Indiferente" }
           ]
         },
         {
@@ -263,38 +161,10 @@
           "tituloQuestao": "Como você avalia as oportunidades de desenvolvimento profissional?",
           "obrigatoria": true,
           "alternativas": [
-            {
-              "alternativaNumero": 1,
-              "ordem": 1,
-              "letra": "A",
-              "valor": 100,
-              "tituloAlternativa": "Totalmente satisfatório",
-              "descricaoAlternativa": "Totalmente satisfatório"
-            },
-            {
-              "alternativaNumero": 2,
-              "ordem": 2,
-              "letra": "B",
-              "valor": 70,
-              "tituloAlternativa": "Satisfatório",
-              "descricaoAlternativa": "Satisfatório"
-            },
-            {
-              "alternativaNumero": 3,
-              "ordem": 3,
-              "letra": "C",
-              "valor": 40,
-              "tituloAlternativa": "Indiferente",
-              "descricaoAlternativa": "Indiferente"
-            },
-            {
-              "alternativaNumero": 4,
-              "ordem": 4,
-              "letra": "D",
-              "valor": 10,
-              "tituloAlternativa": "Insatisfatório",
-              "descricaoAlternativa": "Insatisfatório"
-            }
+            { "alternativaNumero": 1, "ordem": 1, "valor": 100, "tituloAlternativa": "Totalmente Satisfeito" },
+            { "alternativaNumero": 2, "ordem": 2, "valor": 70, "tituloAlternativa": "Satisfeito" },
+            { "alternativaNumero": 3, "ordem": 3, "valor": 40, "tituloAlternativa": "Não Satisfeito" },
+            { "alternativaNumero": 4, "ordem": 4, "valor": 10, "tituloAlternativa": "Indiferente" }
           ]
         },
         {
@@ -304,38 +174,10 @@
           "tituloQuestao": "Como você avalia o clima organizacional da Caixa de modo geral?",
           "obrigatoria": true,
           "alternativas": [
-            {
-              "alternativaNumero": 1,
-              "ordem": 1,
-              "letra": "A",
-              "valor": 100,
-              "tituloAlternativa": "Muito positivo",
-              "descricaoAlternativa": "Muito positivo"
-            },
-            {
-              "alternativaNumero": 2,
-              "ordem": 2,
-              "letra": "B",
-              "valor": 70,
-              "tituloAlternativa": "Positivo",
-              "descricaoAlternativa": "Positivo"
-            },
-            {
-              "alternativaNumero": 3,
-              "ordem": 3,
-              "letra": "C",
-              "valor": 40,
-              "tituloAlternativa": "Neutro",
-              "descricaoAlternativa": "Neutro"
-            },
-            {
-              "alternativaNumero": 4,
-              "ordem": 4,
-              "letra": "D",
-              "valor": 10,
-              "tituloAlternativa": "Negativo",
-              "descricaoAlternativa": "Negativo"
-            }
+            { "alternativaNumero": 1, "ordem": 1, "valor": 100, "tituloAlternativa": "Totalmente Satisfeito" },
+            { "alternativaNumero": 2, "ordem": 2, "valor": 70, "tituloAlternativa": "Satisfeito" },
+            { "alternativaNumero": 3, "ordem": 3, "valor": 40, "tituloAlternativa": "Não Satisfeito" },
+            { "alternativaNumero": 4, "ordem": 4, "valor": 10, "tituloAlternativa": "Indiferente" }
           ]
         },
         {
@@ -345,47 +187,24 @@
           "tituloQuestao": "Você recomendaria a Caixa como um bom lugar para trabalhar?",
           "obrigatoria": true,
           "alternativas": [
-            {
-              "alternativaNumero": 1,
-              "ordem": 1,
-              "letra": "A",
-              "valor": 100,
-              "tituloAlternativa": "Com certeza sim",
-              "descricaoAlternativa": "Com certeza sim"
-            },
-            {
-              "alternativaNumero": 2,
-              "ordem": 2,
-              "letra": "B",
-              "valor": 70,
-              "tituloAlternativa": "Provavelmente sim",
-              "descricaoAlternativa": "Provavelmente sim"
-            },
-            {
-              "alternativaNumero": 3,
-              "ordem": 3,
-              "letra": "C",
-              "valor": 40,
-              "tituloAlternativa": "Não sei dizer",
-              "descricaoAlternativa": "Não sei dizer"
-            },
-            {
-              "alternativaNumero": 4,
-              "ordem": 4,
-              "letra": "D",
-              "valor": 10,
-              "tituloAlternativa": "Provavelmente não",
-              "descricaoAlternativa": "Provavelmente não"
-            }
+            { "alternativaNumero": 1, "ordem": 1, "valor": 100, "tituloAlternativa": "Totalmente Satisfeito" },
+            { "alternativaNumero": 2, "ordem": 2, "valor": 70, "tituloAlternativa": "Satisfeito" },
+            { "alternativaNumero": 3, "ordem": 3, "valor": 40, "tituloAlternativa": "Não Satisfeito" },
+            { "alternativaNumero": 4, "ordem": 4, "valor": 10, "tituloAlternativa": "Indiferente" }
           ]
         },
         {
           "numero": 10,
           "etapa": 4,
-          "tipoQuestao": "S",
-          "tituloQuestao": "Tem alguma sugestão ou comentário adicional para a liderança?",
-          "obrigatoria": false,
-          "alternativas": []
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia o suporte e o reconhecimento da liderança?",
+          "obrigatoria": true,
+          "alternativas": [
+            { "alternativaNumero": 1, "ordem": 1, "valor": 100, "tituloAlternativa": "Totalmente Satisfeito" },
+            { "alternativaNumero": 2, "ordem": 2, "valor": 70, "tituloAlternativa": "Satisfeito" },
+            { "alternativaNumero": 3, "ordem": 3, "valor": 40, "tituloAlternativa": "Não Satisfeito" },
+            { "alternativaNumero": 4, "ordem": 4, "valor": 10, "tituloAlternativa": "Indiferente" }
+          ]
         }
       ]
     },
