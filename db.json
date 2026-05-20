@@ -1,0 +1,761 @@
+{
+  "areas": [
+    {
+      "idArea": 1,
+      "nome": "Tecnologia da Informação",
+      "descricao": "Departamento de TI e Desenvolvimento de Sistemas",
+      "pessoasArea": 45
+    },
+    {
+      "idArea": 2,
+      "nome": "Recursos Humanos",
+      "descricao": "Departamento de Gestão de Pessoas",
+      "pessoasArea": 30
+    },
+    {
+      "idArea": 3,
+      "nome": "Financeiro",
+      "descricao": "Departamento de Finanças e Contabilidade",
+      "pessoasArea": 25
+    },
+    {
+      "idArea": 4,
+      "nome": "Capítulo de Codificação",
+      "descricao": "Equipe de desenvolvimento ágil de software",
+      "pessoasArea": 200
+    },
+    {
+      "idArea": 5,
+      "nome": "Atendimento ao Cliente",
+      "descricao": "Central de atendimento e suporte",
+      "pessoasArea": 80
+    }
+  ],
+  "etapas": [
+    {
+      "idEtapa": 1,
+      "nome": "Meu Time",
+      "descricao": "Avaliação do trabalho em equipe, colaboração e relacionamento interpessoal",
+      "icone": "groups",
+      "ordem": 1
+    },
+    {
+      "idEtapa": 2,
+      "nome": "Meus Benefícios",
+      "descricao": "Avaliação dos benefícios oferecidos pela empresa",
+      "icone": "card_giftcard",
+      "ordem": 2
+    },
+    {
+      "idEtapa": 3,
+      "nome": "Minha Atuação",
+      "descricao": "Avaliação das condições de trabalho, ferramentas e desenvolvimento profissional",
+      "icone": "work",
+      "ordem": 3
+    },
+    {
+      "idEtapa": 4,
+      "nome": "A Caixa",
+      "descricao": "Avaliação da empresa, liderança e visão de futuro",
+      "icone": "account_balance",
+      "ordem": 4
+    }
+  ],
+  "pesquisas": [
+    {
+      "idPesquisa": 1,
+      "id": 1,
+      "nome": "Pesquisa de Clima — Índice de Felicidade Percebida — MAIO",
+      "descricao": "O objetivo desta pesquisa é a criação de um índice de Felicidade Percebida, com o objetivo de direcionar ações de melhoria e engajamento de times",
+      "area": 4,
+      "pessoasArea": 200,
+      "status": 1,
+      "situacao": "Aberta",
+      "dtInicio": "2026-05-01",
+      "dtFim": "2026-12-31",
+      "quantidadeQuestoes": 12,
+      "quantidadeRespostas": 158,
+      "questoes": [
+        {
+          "numero": 1,
+          "etapa": 1,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você percebe sua interação com os demais membros do time?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 1,
+              "ordem": 1,
+              "letra": "A",
+              "valor": 100,
+              "tituloAlternativa": "Totalmente Satisfatória",
+              "descricaoAlternativa": "Totalmente Satisfatória"
+            },
+            {
+              "alternativaNumero": 2,
+              "ordem": 2,
+              "letra": "B",
+              "valor": 70,
+              "tituloAlternativa": "Satisfatória",
+              "descricaoAlternativa": "Satisfatória"
+            },
+            {
+              "alternativaNumero": 3,
+              "ordem": 3,
+              "letra": "C",
+              "valor": 40,
+              "tituloAlternativa": "Indiferente",
+              "descricaoAlternativa": "Indiferente"
+            },
+            {
+              "alternativaNumero": 4,
+              "ordem": 4,
+              "letra": "D",
+              "valor": 10,
+              "tituloAlternativa": "Insatisfatória",
+              "descricaoAlternativa": "Insatisfatória"
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "etapa": 1,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia a colaboração e apoio mútuo dentro do seu time?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 1,
+              "ordem": 1,
+              "letra": "A",
+              "valor": 100,
+              "tituloAlternativa": "Totalmente Satisfatória",
+              "descricaoAlternativa": "Totalmente Satisfatória"
+            },
+            {
+              "alternativaNumero": 2,
+              "ordem": 2,
+              "letra": "B",
+              "valor": 70,
+              "tituloAlternativa": "Satisfatória",
+              "descricaoAlternativa": "Satisfatória"
+            },
+            {
+              "alternativaNumero": 3,
+              "ordem": 3,
+              "letra": "C",
+              "valor": 40,
+              "tituloAlternativa": "Indiferente",
+              "descricaoAlternativa": "Indiferente"
+            },
+            {
+              "alternativaNumero": 4,
+              "ordem": 4,
+              "letra": "D",
+              "valor": 10,
+              "tituloAlternativa": "Insatisfatória",
+              "descricaoAlternativa": "Insatisfatória"
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "etapa": 1,
+          "tipoQuestao": "S",
+          "tituloQuestao": "O que poderia melhorar na dinâmica do seu time?",
+          "obrigatoria": false,
+          "alternativas": []
+        },
+        {
+          "numero": 4,
+          "etapa": 2,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia os benefícios oferecidos pela empresa?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 1,
+              "ordem": 1,
+              "letra": "A",
+              "valor": 100,
+              "tituloAlternativa": "Muito satisfatório",
+              "descricaoAlternativa": "Muito satisfatório"
+            },
+            {
+              "alternativaNumero": 2,
+              "ordem": 2,
+              "letra": "B",
+              "valor": 70,
+              "tituloAlternativa": "Satisfatório",
+              "descricaoAlternativa": "Satisfatório"
+            },
+            {
+              "alternativaNumero": 3,
+              "ordem": 3,
+              "letra": "C",
+              "valor": 40,
+              "tituloAlternativa": "Parcialmente satisfatório",
+              "descricaoAlternativa": "Parcialmente satisfatório"
+            },
+            {
+              "alternativaNumero": 4,
+              "ordem": 4,
+              "letra": "D",
+              "valor": 10,
+              "tituloAlternativa": "Insatisfatório",
+              "descricaoAlternativa": "Insatisfatório"
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "etapa": 2,
+          "tipoQuestao": "S",
+          "tituloQuestao": "Qual benefício você gostaria que a empresa oferecesse?",
+          "obrigatoria": false,
+          "alternativas": []
+        },
+        {
+          "numero": 6,
+          "etapa": 3,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia as ferramentas e recursos disponíveis para seu trabalho?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 1,
+              "ordem": 1,
+              "letra": "A",
+              "valor": 100,
+              "tituloAlternativa": "Excelentes",
+              "descricaoAlternativa": "Excelentes"
+            },
+            {
+              "alternativaNumero": 2,
+              "ordem": 2,
+              "letra": "B",
+              "valor": 70,
+              "tituloAlternativa": "Boas",
+              "descricaoAlternativa": "Boas"
+            },
+            {
+              "alternativaNumero": 3,
+              "ordem": 3,
+              "letra": "C",
+              "valor": 40,
+              "tituloAlternativa": "Regulares",
+              "descricaoAlternativa": "Regulares"
+            },
+            {
+              "alternativaNumero": 4,
+              "ordem": 4,
+              "letra": "D",
+              "valor": 10,
+              "tituloAlternativa": "Ruins",
+              "descricaoAlternativa": "Ruins"
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "etapa": 3,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia as oportunidades de desenvolvimento profissional?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 1,
+              "ordem": 1,
+              "letra": "A",
+              "valor": 100,
+              "tituloAlternativa": "Totalmente satisfatório",
+              "descricaoAlternativa": "Totalmente satisfatório"
+            },
+            {
+              "alternativaNumero": 2,
+              "ordem": 2,
+              "letra": "B",
+              "valor": 70,
+              "tituloAlternativa": "Satisfatório",
+              "descricaoAlternativa": "Satisfatório"
+            },
+            {
+              "alternativaNumero": 3,
+              "ordem": 3,
+              "letra": "C",
+              "valor": 40,
+              "tituloAlternativa": "Indiferente",
+              "descricaoAlternativa": "Indiferente"
+            },
+            {
+              "alternativaNumero": 4,
+              "ordem": 4,
+              "letra": "D",
+              "valor": 10,
+              "tituloAlternativa": "Insatisfatório",
+              "descricaoAlternativa": "Insatisfatório"
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "etapa": 4,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia o clima organizacional da Caixa de modo geral?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 1,
+              "ordem": 1,
+              "letra": "A",
+              "valor": 100,
+              "tituloAlternativa": "Muito positivo",
+              "descricaoAlternativa": "Muito positivo"
+            },
+            {
+              "alternativaNumero": 2,
+              "ordem": 2,
+              "letra": "B",
+              "valor": 70,
+              "tituloAlternativa": "Positivo",
+              "descricaoAlternativa": "Positivo"
+            },
+            {
+              "alternativaNumero": 3,
+              "ordem": 3,
+              "letra": "C",
+              "valor": 40,
+              "tituloAlternativa": "Neutro",
+              "descricaoAlternativa": "Neutro"
+            },
+            {
+              "alternativaNumero": 4,
+              "ordem": 4,
+              "letra": "D",
+              "valor": 10,
+              "tituloAlternativa": "Negativo",
+              "descricaoAlternativa": "Negativo"
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "etapa": 4,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Você recomendaria a Caixa como um bom lugar para trabalhar?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 1,
+              "ordem": 1,
+              "letra": "A",
+              "valor": 100,
+              "tituloAlternativa": "Com certeza sim",
+              "descricaoAlternativa": "Com certeza sim"
+            },
+            {
+              "alternativaNumero": 2,
+              "ordem": 2,
+              "letra": "B",
+              "valor": 70,
+              "tituloAlternativa": "Provavelmente sim",
+              "descricaoAlternativa": "Provavelmente sim"
+            },
+            {
+              "alternativaNumero": 3,
+              "ordem": 3,
+              "letra": "C",
+              "valor": 40,
+              "tituloAlternativa": "Não sei dizer",
+              "descricaoAlternativa": "Não sei dizer"
+            },
+            {
+              "alternativaNumero": 4,
+              "ordem": 4,
+              "letra": "D",
+              "valor": 10,
+              "tituloAlternativa": "Provavelmente não",
+              "descricaoAlternativa": "Provavelmente não"
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "etapa": 4,
+          "tipoQuestao": "S",
+          "tituloQuestao": "Tem alguma sugestão ou comentário adicional para a liderança?",
+          "obrigatoria": false,
+          "alternativas": []
+        }
+      ]
+    },
+    {
+      "idPesquisa": 2,
+      "id": 2,
+      "nome": "Pesquisa de Clima — Índice de Felicidade Percebida — JUNHO",
+      "descricao": "O objetivo desta pesquisa é a criação de um índice de Felicidade Percebida, com o objetivo de direcionar ações de melhoria e engajamento de times",
+      "area": 4,
+      "pessoasArea": 200,
+      "status": 1,
+      "situacao": "Aberta",
+      "dtInicio": "2026-06-01",
+      "dtFim": "2026-06-05",
+      "quantidadeQuestoes": 10,
+      "quantidadeRespostas": 0,
+      "questoes": []
+    },
+    {
+      "idPesquisa": 3,
+      "id": 3,
+      "nome": "Pesquisa de Clima — RH — ABRIL",
+      "descricao": "Pesquisa de clima para o departamento de Recursos Humanos",
+      "area": 2,
+      "pessoasArea": 30,
+      "status": 2,
+      "situacao": "Encerrada",
+      "dtInicio": "2026-04-01",
+      "dtFim": "2026-04-07",
+      "quantidadeQuestoes": 8,
+      "quantidadeRespostas": 24,
+      "questoes": []
+    }
+  ],
+  "respostas": [
+    {
+      "id": 1,
+      "idResposta": 1,
+      "idPesquisa": 1,
+      "idArea": 4,
+      "dtHoraResposta": "2026-05-02T09:30:00Z",
+      "enderecoIp": "192.168.1.100",
+      "finalizada": true,
+      "questoes": []
+    },
+    {
+      "idPesquisa": 1,
+      "dtHoraResposta": "2026-05-20T06:14:02.236Z",
+      "questoes": [
+        {
+          "numero": 1,
+          "etapa": 1,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você percebe sua interação com os demais membros do time?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 4
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "etapa": 1,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia a colaboração e apoio mútuo dentro do seu time?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 3
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "etapa": 2,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia os benefícios oferecidos pela empresa?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 1
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "etapa": 2,
+          "tipoQuestao": "S",
+          "tituloQuestao": "Qual benefício você gostaria que a empresa oferecesse?",
+          "obrigatoria": false,
+          "alternativas": [],
+          "respostaSubjetiva": ""
+        },
+        {
+          "numero": 6,
+          "etapa": 3,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia as ferramentas e recursos disponíveis para seu trabalho?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 3
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "etapa": 3,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia as oportunidades de desenvolvimento profissional?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 3
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "etapa": 4,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Como você avalia o clima organizacional da Caixa de modo geral?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 3
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "etapa": 4,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Você recomendaria a Caixa como um bom lugar para trabalhar?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 3
+            }
+          ]
+        }
+      ],
+      "id": 2
+    }
+  ],
+  "dashboards": [
+    {
+      "id": 1,
+      "quantidadeRespostas": 158,
+      "quantidadeEntrevistados": 200,
+      "percentualParticipacao": 79,
+      "questoesPorEtapa": [
+        {
+          "idEtapa": 1,
+          "nomeEtapa": "Meu Time",
+          "questoes": [
+            {
+              "numero": 1,
+              "titulo": "Como você percebe sua interação com os demais membros do time?",
+              "alternativas": [
+                {
+                  "letra": "A",
+                  "titulo": "Totalmente Satisfatória",
+                  "quantidade": 72,
+                  "percentual": 46
+                },
+                {
+                  "letra": "B",
+                  "titulo": "Satisfatória",
+                  "quantidade": 54,
+                  "percentual": 34
+                },
+                {
+                  "letra": "C",
+                  "titulo": "Indiferente",
+                  "quantidade": 20,
+                  "percentual": 13
+                },
+                {
+                  "letra": "D",
+                  "titulo": "Insatisfatória",
+                  "quantidade": 12,
+                  "percentual": 7
+                }
+              ]
+            },
+            {
+              "numero": 2,
+              "titulo": "Como você avalia a colaboração e apoio mútuo dentro do seu time?",
+              "alternativas": [
+                {
+                  "letra": "A",
+                  "titulo": "Totalmente Satisfatória",
+                  "quantidade": 63,
+                  "percentual": 40
+                },
+                {
+                  "letra": "B",
+                  "titulo": "Satisfatória",
+                  "quantidade": 68,
+                  "percentual": 43
+                },
+                {
+                  "letra": "C",
+                  "titulo": "Indiferente",
+                  "quantidade": 16,
+                  "percentual": 10
+                },
+                {
+                  "letra": "D",
+                  "titulo": "Insatisfatória",
+                  "quantidade": 11,
+                  "percentual": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idEtapa": 2,
+          "nomeEtapa": "Meus Benefícios",
+          "questoes": [
+            {
+              "numero": 4,
+              "titulo": "Como você avalia os benefícios oferecidos pela empresa?",
+              "alternativas": [
+                {
+                  "letra": "A",
+                  "titulo": "Muito satisfatório",
+                  "quantidade": 48,
+                  "percentual": 30
+                },
+                {
+                  "letra": "B",
+                  "titulo": "Satisfatório",
+                  "quantidade": 65,
+                  "percentual": 41
+                },
+                {
+                  "letra": "C",
+                  "titulo": "Parcialmente satisfatório",
+                  "quantidade": 30,
+                  "percentual": 19
+                },
+                {
+                  "letra": "D",
+                  "titulo": "Insatisfatório",
+                  "quantidade": 15,
+                  "percentual": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idEtapa": 3,
+          "nomeEtapa": "Minha Atuação",
+          "questoes": [
+            {
+              "numero": 6,
+              "titulo": "Como você avalia as ferramentas e recursos disponíveis para seu trabalho?",
+              "alternativas": [
+                {
+                  "letra": "A",
+                  "titulo": "Excelentes",
+                  "quantidade": 35,
+                  "percentual": 22
+                },
+                {
+                  "letra": "B",
+                  "titulo": "Boas",
+                  "quantidade": 80,
+                  "percentual": 51
+                },
+                {
+                  "letra": "C",
+                  "titulo": "Regulares",
+                  "quantidade": 32,
+                  "percentual": 20
+                },
+                {
+                  "letra": "D",
+                  "titulo": "Ruins",
+                  "quantidade": 11,
+                  "percentual": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "idEtapa": 4,
+          "nomeEtapa": "A Caixa",
+          "questoes": [
+            {
+              "numero": 8,
+              "titulo": "Como você avalia o clima organizacional da Caixa de modo geral?",
+              "alternativas": [
+                {
+                  "letra": "A",
+                  "titulo": "Muito positivo",
+                  "quantidade": 55,
+                  "percentual": 35
+                },
+                {
+                  "letra": "B",
+                  "titulo": "Positivo",
+                  "quantidade": 72,
+                  "percentual": 46
+                },
+                {
+                  "letra": "C",
+                  "titulo": "Neutro",
+                  "quantidade": 22,
+                  "percentual": 14
+                },
+                {
+                  "letra": "D",
+                  "titulo": "Negativo",
+                  "quantidade": 9,
+                  "percentual": 5
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "questoesAbertas": [
+        {
+          "etapa": "Meu Time",
+          "respostas": [
+            "A equipe poderia ter mais diversidade de perfis",
+            "Tudo ótimo, time muito colaborativo!",
+            "Sinto falta de mais reuniões de retrospectiva",
+            "A comunicação entre times distintos poderia melhorar"
+          ]
+        },
+        {
+          "etapa": "Meus Benefícios",
+          "respostas": [
+            "Acredito que possa melhorar o valor do vale refeição",
+            "Gostaria de ter auxílio para home office",
+            "Os planos de saúde são bons, mas poderiam incluir mais especialidades"
+          ]
+        },
+        {
+          "etapa": "Minha Atuação",
+          "respostas": [
+            "Mais treinamentos técnicos seriam bem-vindos",
+            "As ferramentas de desenvolvimento estão desatualizadas"
+          ]
+        },
+        {
+          "etapa": "A Caixa",
+          "respostas": [
+            "A empresa tem um bom propósito, mas poderia modernizar a cultura",
+            "Orgulhoso de trabalhar aqui!",
+            "Precisamos de mais transparência nas decisões estratégicas"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "quantidadeRespostas": 24,
+      "quantidadeEntrevistados": 30,
+      "percentualParticipacao": 80,
+      "questoesPorEtapa": [],
+      "questoesAbertas": []
+    }
+  ]
+}

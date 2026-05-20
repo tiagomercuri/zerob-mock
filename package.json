@@ -1,0 +1,11 @@
+{
+  "name": "mock-api-pesquisa-clima",
+  "version": "1.0.0",
+  "description": "Mock API para desenvolvimento local do frontend de Pesquisa de Clima",
+  "scripts": {
+    "start": "json-server --watch db.json --routes routes.json --port 3000 --middlewares middleware.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
