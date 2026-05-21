@@ -621,545 +621,9 @@
   ],
   "respostas": [
     {
-      "id": 1,
-      "idResposta": 1,
       "idPesquisa": 1,
-      "idArea": 4,
-      "dtHoraResposta": "2026-05-02T09:30:00Z",
-      "enderecoIp": "192.168.1.100",
-      "finalizada": true,
-      "questoes": []
-    },
-    {
-      "idPesquisa": 1,
-      "dtHoraResposta": "2026-05-20T06:14:02.236Z",
-      "questoes": [
-        {
-          "numero": 1,
-          "etapa": 1,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você percebe sua interação com os demais membros do time?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 4
-            }
-          ]
-        },
-        {
-          "numero": 2,
-          "etapa": 1,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia a colaboração e apoio mútuo dentro do seu time?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        },
-        {
-          "numero": 4,
-          "etapa": 2,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia os benefícios oferecidos pela empresa?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 1
-            }
-          ]
-        },
-        {
-          "numero": 5,
-          "etapa": 2,
-          "tipoQuestao": "S",
-          "tituloQuestao": "Qual benefício você gostaria que a empresa oferecesse?",
-          "obrigatoria": false,
-          "alternativas": [],
-          "respostaSubjetiva": ""
-        },
-        {
-          "numero": 6,
-          "etapa": 3,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia as ferramentas e recursos disponíveis para seu trabalho?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        },
-        {
-          "numero": 7,
-          "etapa": 3,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia as oportunidades de desenvolvimento profissional?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        },
-        {
-          "numero": 8,
-          "etapa": 4,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o clima organizacional da Caixa de modo geral?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        },
-        {
-          "numero": 9,
-          "etapa": 4,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Você recomendaria a Caixa como um bom lugar para trabalhar?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        }
-      ],
-      "id": 2
-    },
-    {
-      "idPesquisa": 1,
-      "dtHoraResposta": "2026-05-20T06:52:59.045Z",
-      "questoes": [
-        {
-          "numero": 1,
-          "etapa": 1,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você percebe sua interação com os demais membros do time?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        },
-        {
-          "numero": 2,
-          "etapa": 1,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia a colaboração e apoio mútuo dentro do seu time?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 2
-            }
-          ]
-        },
-        {
-          "numero": 3,
-          "etapa": 1,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia a comunicação interna dentro do seu time?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 2
-            }
-          ]
-        },
-        {
-          "numero": 4,
-          "etapa": 2,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia os benefícios oferecidos pela empresa?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 2
-            }
-          ]
-        },
-        {
-          "numero": 5,
-          "etapa": 2,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o plano de saúde e os benefícios de bem-estar?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 2
-            }
-          ]
-        },
-        {
-          "numero": 6,
-          "etapa": 3,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia as ferramentas e recursos disponíveis para seu trabalho?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        },
-        {
-          "numero": 7,
-          "etapa": 3,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia as oportunidades de desenvolvimento profissional?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        },
-        {
-          "numero": 8,
-          "etapa": 4,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o clima organizacional da Caixa de modo geral?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        },
-        {
-          "numero": 9,
-          "etapa": 4,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Você recomendaria a Caixa como um bom lugar para trabalhar?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        },
-        {
-          "numero": 10,
-          "etapa": 4,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o suporte e o reconhecimento da liderança?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        }
-      ],
-      "id": 3
-    },
-    {
-      "idPesquisa": 1,
-      "dtHoraResposta": "2026-05-20T07:00:05.492Z",
-      "questoes": [
-        {
-          "numero": 1,
-          "etapa": 1,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você percebe sua interação com os demais membros do time?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 2
-            }
-          ]
-        },
-        {
-          "numero": 2,
-          "etapa": 1,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia a colaboração e apoio mútuo dentro do seu time?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 2
-            }
-          ]
-        },
-        {
-          "numero": 3,
-          "etapa": 1,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia a comunicação interna dentro do seu time?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 2
-            }
-          ]
-        },
-        {
-          "numero": 4,
-          "etapa": 2,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia os benefícios oferecidos pela empresa?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 1
-            }
-          ]
-        },
-        {
-          "numero": 5,
-          "etapa": 2,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o plano de saúde e os benefícios de bem-estar?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 1
-            }
-          ]
-        },
-        {
-          "numero": 6,
-          "etapa": 3,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia as ferramentas e recursos disponíveis para seu trabalho?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 2
-            }
-          ]
-        },
-        {
-          "numero": 7,
-          "etapa": 3,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia as oportunidades de desenvolvimento profissional?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 2
-            }
-          ]
-        },
-        {
-          "numero": 8,
-          "etapa": 4,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o clima organizacional da Caixa de modo geral?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        },
-        {
-          "numero": 9,
-          "etapa": 4,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Você recomendaria a Caixa como um bom lugar para trabalhar?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        },
-        {
-          "numero": 10,
-          "etapa": 4,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o suporte e o reconhecimento da liderança?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        }
-      ],
-      "id": 4
-    },
-    {
-      "idPesquisa": 1,
-      "dtHoraResposta": "2026-05-20T07:01:17.583Z",
-      "questoes": [
-        {
-          "numero": 1,
-          "etapa": 1,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você percebe sua interação com os demais membros do time?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 1
-            }
-          ]
-        },
-        {
-          "numero": 2,
-          "etapa": 1,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia a colaboração e apoio mútuo dentro do seu time?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 3
-            }
-          ]
-        },
-        {
-          "numero": 3,
-          "etapa": 1,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia a comunicação interna dentro do seu time?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 1
-            }
-          ]
-        },
-        {
-          "numero": 4,
-          "etapa": 2,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia os benefícios oferecidos pela empresa?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 1
-            }
-          ]
-        },
-        {
-          "numero": 5,
-          "etapa": 2,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o plano de saúde e os benefícios de bem-estar?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 1
-            }
-          ]
-        },
-        {
-          "numero": 6,
-          "etapa": 3,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia as ferramentas e recursos disponíveis para seu trabalho?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 1
-            }
-          ]
-        },
-        {
-          "numero": 7,
-          "etapa": 3,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia as oportunidades de desenvolvimento profissional?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 1
-            }
-          ]
-        },
-        {
-          "numero": 8,
-          "etapa": 4,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o clima organizacional da Caixa de modo geral?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 1
-            }
-          ]
-        },
-        {
-          "numero": 9,
-          "etapa": 4,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Você recomendaria a Caixa como um bom lugar para trabalhar?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 4
-            }
-          ]
-        },
-        {
-          "numero": 10,
-          "etapa": 4,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o suporte e o reconhecimento da liderança?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 4
-            }
-          ]
-        }
-      ],
-      "id": 5
-    },
-    {
-      "idPesquisa": 1,
-      "dtHoraResposta": "2026-05-21T03:57:19.978Z",
-      "questoes": [
-        {
-          "numero": 10,
-          "etapa": 4,
-          "idSistema": 0,
-          "tipoQuestao": "M",
-          "tituloQuestao": "O sistema permite que você conclua suas tarefas de ponta a ponta sem precisar de ferramentas externas?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 2
-            }
-          ]
-        },
-        {
-          "numero": 11,
-          "etapa": 4,
-          "idSistema": 0,
-          "tipoQuestao": "M",
-          "tituloQuestao": "O sistema é confiável e apresenta poucas falhas, perdas de dados ou interrupções inesperadas?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 2
-            }
-          ]
-        },
-        {
-          "numero": 12,
-          "etapa": 4,
-          "idSistema": 0,
-          "tipoQuestao": "M",
-          "tituloQuestao": "Os resultados e informações gerados pelo sistema são precisos e confiáveis para a tomada de decisão?",
-          "obrigatoria": true,
-          "alternativas": [
-            {
-              "alternativaNumero": 2
-            }
-          ]
-        }
-      ],
-      "id": 6
-    },
-    {
-      "idPesquisa": 1,
-      "dtHoraResposta": "2026-05-21T04:35:27.825Z",
+      "matricula": "c123456",
+      "dtHoraResposta": "2026-05-21T05:13:39.253Z",
       "questoes": [
         {
           "numero": 1,
@@ -1197,7 +661,7 @@
           "idSistema": 2,
           "alternativas": [
             {
-              "alternativaNumero": 2
+              "alternativaNumero": 1
             }
           ]
         },
@@ -1217,7 +681,7 @@
           "idSistema": 2,
           "alternativas": [
             {
-              "alternativaNumero": 2
+              "alternativaNumero": 1
             }
           ]
         },
@@ -1287,7 +751,7 @@
           "idSistema": 1,
           "alternativas": [
             {
-              "alternativaNumero": 2
+              "alternativaNumero": 1
             }
           ]
         },
@@ -1297,7 +761,7 @@
           "idSistema": 1,
           "alternativas": [
             {
-              "alternativaNumero": 2
+              "alternativaNumero": 3
             }
           ]
         },
@@ -1317,7 +781,7 @@
           "idSistema": 1,
           "alternativas": [
             {
-              "alternativaNumero": 3
+              "alternativaNumero": 2
             }
           ]
         },
@@ -1367,7 +831,7 @@
           "idSistema": 1,
           "alternativas": [
             {
-              "alternativaNumero": 3
+              "alternativaNumero": 2
             }
           ]
         },
@@ -1402,7 +866,7 @@
           ]
         }
       ],
-      "id": 7
+      "id": 1
     }
   ],
   "dashboards": [
