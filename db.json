@@ -34,31 +34,121 @@
   "etapas": [
     {
       "idEtapa": 1,
-      "nome": "Meu Time",
-      "descricao": "Avaliação do trabalho em equipe, colaboração e relacionamento interpessoal",
-      "icone": "groups",
+      "nome": "Usabilidade",
+      "descricao": "Avalie a facilidade de uso e a experiência de navegação no {sistema} — interface, menus e clareza das informações apresentadas.",
+      "icone": "touch_app",
+      "cor": "#1976D2",
       "ordem": 1
     },
     {
       "idEtapa": 2,
-      "nome": "Meus Benefícios",
-      "descricao": "Avaliação dos benefícios oferecidos pela empresa",
-      "icone": "card_giftcard",
+      "nome": "Eficiência",
+      "descricao": "Avalie a rapidez, o desempenho e a capacidade do {sistema} de suportar sua produtividade no dia a dia.",
+      "icone": "speed",
+      "cor": "#388E3C",
       "ordem": 2
     },
     {
       "idEtapa": 3,
-      "nome": "Minha Atuação",
-      "descricao": "Avaliação das condições de trabalho, ferramentas e desenvolvimento profissional",
-      "icone": "work",
+      "nome": "Aprendizado",
+      "descricao": "Avalie a curva de aprendizado, o suporte recebido e a qualidade da documentação do {sistema}.",
+      "icone": "school",
+      "cor": "#F57C00",
       "ordem": 3
     },
     {
       "idEtapa": 4,
-      "nome": "A Caixa",
-      "descricao": "Avaliação da empresa, liderança e visão de futuro",
-      "icone": "account_balance",
+      "nome": "Eficácia",
+      "descricao": "Avalie se o {sistema} permite concluir tarefas com sucesso, sua confiabilidade e consistência de resultados.",
+      "icone": "verified",
+      "cor": "#7B1FA2",
       "ordem": 4
+    }
+  ],
+  "sistemas": [
+    {
+      "idSistema": 1,
+      "sigla": "SISRH",
+      "categoria": "RH",
+      "nome": "SISRH",
+      "descricao": "Sistema de Gestão de Recursos Humanos — cadastro, movimentações e administração de pessoal.",
+      "tags": [
+        "Gestão de Pessoas",
+        "RH"
+      ],
+      "icone": "group"
+    },
+    {
+      "idSistema": 2,
+      "sigla": "SIPON",
+      "categoria": "PONTO",
+      "nome": "SIPON",
+      "descricao": "Sistema de Controle de Ponto — registro de jornada, horas extras, abonos e ocorrências.",
+      "tags": [
+        "Controle de Jornada",
+        "RH"
+      ],
+      "icone": "schedule"
+    },
+    {
+      "idSistema": 3,
+      "sigla": "Integramais",
+      "categoria": "INTEGRAÇÃO",
+      "nome": "Integramais",
+      "descricao": "Sistema de Integração de Sistemas de Gestão de Pessoas — plataforma integradora dos sistemas de RH.",
+      "tags": [
+        "Integração",
+        "RH"
+      ],
+      "icone": "sync_alt"
+    },
+    {
+      "idSistema": 4,
+      "sigla": "Atendimento",
+      "categoria": "ATENDIMENTO",
+      "nome": "Atendimento",
+      "descricao": "Sistema de Atendimento — gerenciamento de chamados, solicitações e suporte aos colaboradores.",
+      "tags": [
+        "Suporte",
+        "Atendimento"
+      ],
+      "icone": "headset_mic"
+    },
+    {
+      "idSistema": 5,
+      "sigla": "SIABE",
+      "categoria": "BENEFÍCIOS",
+      "nome": "SIABE",
+      "descricao": "Sistema de Administração de Pagamentos de Benefícios — processamento e gestão de benefícios e pagamentos.",
+      "tags": [
+        "Pagamentos",
+        "Benefícios"
+      ],
+      "icone": "payments"
+    },
+    {
+      "idSistema": 6,
+      "sigla": "SIAGS",
+      "categoria": "SAÚDE",
+      "nome": "SIAGS",
+      "descricao": "Sistema de Autogestão em Saúde — gestão do plano de saúde, consultas, reembolsos e rede credenciada.",
+      "tags": [
+        "Saúde",
+        "Autogestão"
+      ],
+      "icone": "favorite"
+    },
+    {
+      "idSistema": 7,
+      "sigla": "SIAUT",
+      "categoria": "AUTOATENDIMENTO",
+      "nome": "SIAUT",
+      "descricao": "Sistema de Autoatendimento — portal do colaborador para solicitações, consultas e serviços de RH online.",
+      "tags": [
+        "Portal",
+        "Autoatendimento"
+      ],
+      "icone": "person_pin"
     }
   ],
   "pesquisas": [
@@ -79,8 +169,10 @@
         {
           "numero": 1,
           "etapa": 1,
+          "idSistema": 0,
           "tipoQuestao": "M",
-          "tituloQuestao": "Como você percebe sua interação com os demais membros do time?",
+          "tituloQuestao": "A interface do sistema é intuitiva e fácil de compreender sem necessidade de treinamento?",
+          "descricaoQuestao": "Considere a disposição de menus, botões e a clareza das informações na tela.",
           "obrigatoria": true,
           "alternativas": [
             {
@@ -112,8 +204,10 @@
         {
           "numero": 2,
           "etapa": 1,
+          "idSistema": 0,
           "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia a colaboração e apoio mútuo dentro do seu time?",
+          "tituloQuestao": "A navegação entre telas, menus e funcionalidades do sistema é fluida e lógica?",
+          "descricaoQuestao": "Avalie se o caminho para executar tarefas faz sentido e se é fácil encontrar o que precisa.",
           "obrigatoria": true,
           "alternativas": [
             {
@@ -145,8 +239,10 @@
         {
           "numero": 3,
           "etapa": 1,
+          "idSistema": 0,
           "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia a comunicação interna dentro do seu time?",
+          "tituloQuestao": "Com que frequência você consegue realizar suas tarefas no sistema sem interrupções ou erros de interface?",
+          "descricaoQuestao": "Considere travar, deslogar inesperadamente, mensagens de erro confusas ou campos que não funcionam.",
           "obrigatoria": true,
           "alternativas": [
             {
@@ -178,8 +274,10 @@
         {
           "numero": 4,
           "etapa": 2,
+          "idSistema": 0,
           "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia os benefícios oferecidos pela empresa?",
+          "tituloQuestao": "O sistema responde com rapidez adequada ao executar operações e processar solicitações?",
+          "descricaoQuestao": "Avalie o tempo de resposta ao salvar registros, gerar relatórios, abrir telas ou executar consultas.",
           "obrigatoria": true,
           "alternativas": [
             {
@@ -211,8 +309,10 @@
         {
           "numero": 5,
           "etapa": 2,
+          "idSistema": 0,
           "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o plano de saúde e os benefícios de bem-estar?",
+          "tituloQuestao": "O sistema se integra bem com as outras ferramentas e sistemas que você utiliza no trabalho?",
+          "descricaoQuestao": "Considere a facilidade de transferir dados, exportar arquivos ou conectar com outros sistemas corporativos.",
           "obrigatoria": true,
           "alternativas": [
             {
@@ -243,9 +343,11 @@
         },
         {
           "numero": 6,
-          "etapa": 3,
+          "etapa": 2,
+          "idSistema": 0,
           "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia as ferramentas e recursos disponíveis para seu trabalho?",
+          "tituloQuestao": "O sistema apresenta desempenho estável durante o horário de pico (período de maior uso simultâneo)?",
+          "descricaoQuestao": "Avalie se há queda de performance, lentidão excessiva ou instabilidade nos horários de maior demanda.",
           "obrigatoria": true,
           "alternativas": [
             {
@@ -277,8 +379,10 @@
         {
           "numero": 7,
           "etapa": 3,
+          "idSistema": 0,
           "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia as oportunidades de desenvolvimento profissional?",
+          "tituloQuestao": "A curva de aprendizado do sistema é adequada para um novo usuário começar a operar sem dificuldades?",
+          "descricaoQuestao": "Considere quanto tempo levou para você (ou colegas) ganhar autonomia no uso do sistema.",
           "obrigatoria": true,
           "alternativas": [
             {
@@ -309,9 +413,11 @@
         },
         {
           "numero": 8,
-          "etapa": 4,
+          "etapa": 3,
+          "idSistema": 0,
           "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o clima organizacional da Caixa de modo geral?",
+          "tituloQuestao": "O suporte técnico e o atendimento ao usuário são eficientes quando você encontra dificuldades no sistema?",
+          "descricaoQuestao": "Avalie a disponibilidade, tempo de resposta e qualidade das soluções oferecidas pelo suporte.",
           "obrigatoria": true,
           "alternativas": [
             {
@@ -342,9 +448,11 @@
         },
         {
           "numero": 9,
-          "etapa": 4,
+          "etapa": 3,
+          "idSistema": 0,
           "tipoQuestao": "M",
-          "tituloQuestao": "Você recomendaria a Caixa como um bom lugar para trabalhar?",
+          "tituloQuestao": "A documentação, manuais ou materiais de treinamento do sistema são claros, atualizados e fáceis de acessar?",
+          "descricaoQuestao": "Considere FAQs, guias internos, vídeos de treinamento ou qualquer material de apoio disponível.",
           "obrigatoria": true,
           "alternativas": [
             {
@@ -376,8 +484,80 @@
         {
           "numero": 10,
           "etapa": 4,
+          "idSistema": 0,
           "tipoQuestao": "M",
-          "tituloQuestao": "Como você avalia o suporte e o reconhecimento da liderança?",
+          "tituloQuestao": "O sistema permite que você conclua suas tarefas de ponta a ponta sem precisar de ferramentas externas?",
+          "descricaoQuestao": "Avalie se o sistema oferece todas as funcionalidades necessárias para o fluxo completo de seu trabalho.",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 1,
+              "ordem": 1,
+              "valor": 100,
+              "tituloAlternativa": "Totalmente Satisfeito"
+            },
+            {
+              "alternativaNumero": 2,
+              "ordem": 2,
+              "valor": 70,
+              "tituloAlternativa": "Satisfeito"
+            },
+            {
+              "alternativaNumero": 3,
+              "ordem": 3,
+              "valor": 40,
+              "tituloAlternativa": "Não Satisfeito"
+            },
+            {
+              "alternativaNumero": 4,
+              "ordem": 4,
+              "valor": 10,
+              "tituloAlternativa": "Indiferente"
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "etapa": 4,
+          "idSistema": 0,
+          "tipoQuestao": "M",
+          "tituloQuestao": "O sistema é confiável e apresenta poucas falhas, perdas de dados ou interrupções inesperadas?",
+          "descricaoQuestao": "Considere frequência de quedas, dados perdidos após erros, necessidade de retrabalho por instabilidade.",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 1,
+              "ordem": 1,
+              "valor": 100,
+              "tituloAlternativa": "Totalmente Satisfeito"
+            },
+            {
+              "alternativaNumero": 2,
+              "ordem": 2,
+              "valor": 70,
+              "tituloAlternativa": "Satisfeito"
+            },
+            {
+              "alternativaNumero": 3,
+              "ordem": 3,
+              "valor": 40,
+              "tituloAlternativa": "Não Satisfeito"
+            },
+            {
+              "alternativaNumero": 4,
+              "ordem": 4,
+              "valor": 10,
+              "tituloAlternativa": "Indiferente"
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "etapa": 4,
+          "idSistema": 0,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Os resultados e informações gerados pelo sistema são precisos e confiáveis para a tomada de decisão?",
+          "descricaoQuestao": "Avalie a precisão de relatórios, cálculos, dados processados e a consistência dos resultados.",
           "obrigatoria": true,
           "alternativas": [
             {
@@ -930,6 +1110,299 @@
         }
       ],
       "id": 5
+    },
+    {
+      "idPesquisa": 1,
+      "dtHoraResposta": "2026-05-21T03:57:19.978Z",
+      "questoes": [
+        {
+          "numero": 10,
+          "etapa": 4,
+          "idSistema": 0,
+          "tipoQuestao": "M",
+          "tituloQuestao": "O sistema permite que você conclua suas tarefas de ponta a ponta sem precisar de ferramentas externas?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "etapa": 4,
+          "idSistema": 0,
+          "tipoQuestao": "M",
+          "tituloQuestao": "O sistema é confiável e apresenta poucas falhas, perdas de dados ou interrupções inesperadas?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "etapa": 4,
+          "idSistema": 0,
+          "tipoQuestao": "M",
+          "tituloQuestao": "Os resultados e informações gerados pelo sistema são precisos e confiáveis para a tomada de decisão?",
+          "obrigatoria": true,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        }
+      ],
+      "id": 6
+    },
+    {
+      "idPesquisa": 1,
+      "dtHoraResposta": "2026-05-21T04:35:27.825Z",
+      "questoes": [
+        {
+          "numero": 1,
+          "tipoQuestao": "M",
+          "idSistema": 2,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "tipoQuestao": "M",
+          "idSistema": 2,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "tipoQuestao": "M",
+          "idSistema": 2,
+          "alternativas": [
+            {
+              "alternativaNumero": 3
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "tipoQuestao": "M",
+          "idSistema": 2,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "tipoQuestao": "M",
+          "idSistema": 2,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "tipoQuestao": "M",
+          "idSistema": 2,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "tipoQuestao": "M",
+          "idSistema": 2,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "tipoQuestao": "M",
+          "idSistema": 2,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "tipoQuestao": "M",
+          "idSistema": 2,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "tipoQuestao": "M",
+          "idSistema": 2,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "tipoQuestao": "M",
+          "idSistema": 2,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "tipoQuestao": "M",
+          "idSistema": 2,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 1,
+          "tipoQuestao": "M",
+          "idSistema": 1,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "tipoQuestao": "M",
+          "idSistema": 1,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "tipoQuestao": "M",
+          "idSistema": 1,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "tipoQuestao": "M",
+          "idSistema": 1,
+          "alternativas": [
+            {
+              "alternativaNumero": 3
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "tipoQuestao": "M",
+          "idSistema": 1,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "tipoQuestao": "M",
+          "idSistema": 1,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "tipoQuestao": "M",
+          "idSistema": 1,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "tipoQuestao": "M",
+          "idSistema": 1,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "tipoQuestao": "M",
+          "idSistema": 1,
+          "alternativas": [
+            {
+              "alternativaNumero": 3
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "tipoQuestao": "M",
+          "idSistema": 1,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "tipoQuestao": "M",
+          "idSistema": 1,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "tipoQuestao": "M",
+          "idSistema": 1,
+          "alternativas": [
+            {
+              "alternativaNumero": 2
+            }
+          ]
+        }
+      ],
+      "id": 7
     }
   ],
   "dashboards": [
