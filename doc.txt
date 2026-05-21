@@ -1,0 +1,133 @@
+http://localhost:8080/api/etapas
+
+[  {    "id": 1,    "nome": "Usabilidade",    "descricao": "Facilidade de uso, interface intuitiva e navegação do sistema.",    "icone": "mouse",    "ordem": 1,    "ativo": true  },
+  {    "id": 2,    "nome": "Eficiência",    "descricao": "Rapidez, desempenho, tempo de resposta e produtividade com o sistema.",    "icone": "bolt",    "ordem": 2,    "ativo": true  },
+  {    "id": 3,    "nome": "Aprendizado",    "descricao": "Facilidade de aprendizado, curva de aprendizado e suporte disponível.",    "icone": "book",    "ordem": 3,    "ativo": tru
+
+
+  API PESQUISA:
+
+  http://localhost:8080/api/pesquisa?etapa=1&idPesquisa=1&idSistema=2
+
+  Response body
+
+  {  "id": 1,  "nome": "Pesquisa de Satisfação da Experiência Digital na Caixa - 2026",  "descricao": "Pesquisa anual para avaliar a satisfação dos colaboradores da Caixa com os sistemas digitais corporativos. Avalia 7 sistemas em 4 etapas: Usabilidade, Eficiência, Aprendizado e Eficácia. PESQUISA ANÔNIMA.",  "area": "Tecnologia da Informação",  "pessoasArea": 120,  "status": 1,  "dtInicio": "2026-05-01",  "dtFim": "2026-06-30",  "questoes": [    {      "numero": 6,      "idSistema": 2,      "etapa": 1,      "tipoQuestao": "M",      "tituloQuestao": "A interface do SIPON é fácil de usar para registrar o ponto?",      "alternativas": [        {          "alternativaNumero": 1,          "letra": "A",          "valor": 1,          "ordem": 1,          "descricaoAlternativa": "Discordo totalmente"        },
+        {          "alternativaNumero": 2,          "letra": "B",          "valor": 2,          "ordem": 2,          "descricaoAlternativa": "Discordo parcialmente"        },
+        {          "alternativaNumero": 3,          "letra": "C",          "valor": 3,          "ordem": 3,          "descricaoAlternativa": "Concordo parcialmente"        },
+        {          "alternativaNumero": 4,          "letra": "D",          "valor": 4,          "ordem": 4,          "descricaoAlternativa": "Concordo totalmente"        }
+      ]
+    }
+  ]
+}
+
+Areas:
+
+http://localhost:8080/api/pesquisa/lista/areas
+
+ 1,    "nome": "Tecnologia da Informação",    "sigla": "CETEC",    "descricao": "Centralizadora de Tecnologia",    "quantidadePessoas": 120,    "ativo": true  },
+  {    "id": 2,    "nome": "Gestão de Pessoas",    "sigla": "GIPES",    "descricao": "Gerência de Gestão de Pessoas",    "quantidadePessoas": 45,    "ativo": true  },
+  {    "id": 3,    "nome": "Atendimento e Operações",    "sigla": "GIATE",    "descricao": "Gerência de Atendimento",    "quantidadePessoas": 200,    "ativo": true  },
+  {    "id": 4,    "nome": "Administração e Finanças",    "sigla": "GIAFI",    "descricao": "Gerência de Administração e Finanças",    "quantidadePessoas": 35,    "ativo": true  },
+  {    "id": 5,    "nome": "Saúde e Qualidade de Vida",    "sigla": "GISQV",    "descricao": "Gerência de Saúde e Qualidade de Vida",    "quantidadePessoas": 25,    "ativo": true  },
+  {    "id": 6,    "nome": "Rede de Agências",    "sigla": "REAGE",    "descricao": "Rede de Agências e Unidades de Atendimento",    "quantidadePessoas": 350,    "ativo": true  },
+  {    "id": 7,    "nome": "Controladoria e Compliance",    "sigla": "GICOC",    "descricao": "Gerência de Controladoria e Compliance",    "quantidadePessoas": 30,    "ativo": true  },
+  {    "id": 8,    "nome": "Habitação",    "sigla": "GIHAB",    "descricao": "Gerência de Habitação",    "quantidadePessoas": 80,    "ativo": true  }
+]
+
+Resposta:
+Post
+http://localhost:8080/api/pesquisa/resposta
+Request Body
+{  "idPesquisa": 1,  "dtHoraResposta": "2026-05-21",  "questoes": [    {      "numero": 1,      "tipoQuestao": "M",      "alternativas": [        {          "alternativaNumero": 1        }      ],      "respostaSubjetiva": ""    }  ]}
+
+Response body
+{  "idResposta": 100,  "idPesquisa": 1,  "idArea": 2,  "dtHoraResposta": "2026-05-21",  "enderecoIp": "128.000.001.001",  "finalizada": true,  "questoes": [    {      "titulo": "A interface do SISRH é fácil de usar e intuitiva?",      "tipoQuestao": "M",      "etapa": 1,      "numero": 1,      "alternativas": [        {          "alternativaNumero": 1,          "letra": "A",          "valor": 1,          "ordem": 1,          "descricaoAlternativa": "Discordo totalmente"        }
+      ],      "respostaSubjetiva": null    }
+  ]
+}
+
+GET
+
+
+
+Sistemas:
+
+GET http://localhost:8080/api/sistemas
+
+Response body
+Download
+[
+  {
+    "id": 1,
+    "sigla": "SISRH",
+    "nome": "Sistema de Gestão de Recursos Humanos",
+    "descricao": "Sistema corporativo para gestão de recursos humanos, cadastro funcional, movimentação e informações de pessoal.",
+    "urlAcesso": null,
+    "icone": "user",
+    "ordem": 1,
+    "ativo": true
+  },
+  {
+    "id": 2,
+    "sigla": "SIPON",
+    "nome": "Sistema de Controle de Ponto",
+    "descricao": "Sistema para registro e controle de ponto eletrônico, jornada de trabalho, horas extras e banco de horas.",
+    "urlAcesso": null,
+    "icone": "clock",
+    "ordem": 2,
+    "ativo": true
+  },
+  {
+    "id": 3,
+    "sigla": "Integramais",
+    "nome": "Sistema de Integração de Sistemas de Gestão de Pessoas",
+    "descricao": "Plataforma integradora dos sistemas de gestão de pessoas, centralizando informações de múltiplos sistemas.",
+    "urlAcesso": null,
+    "icone": "link",
+    "ordem": 3,
+    "ativo": true
+  },
+  {
+    "id": 4,
+    "sigla": "Atendimento",
+    "nome": "Sistema de Atendimento",
+    "descricao": "Sistema de gestão de atendimento ao cliente interno e externo, protocolos e solicitações.",
+    "urlAcesso": null,
+    "icone": "phone",
+    "ordem": 4,
+    "ativo": true
+  },
+  {
+    "id": 5,
+    "sigla": "SIABE",
+    "nome": "Sistema Administração de Pagamentos de Benefícios",
+    "descricao": "Sistema para administração e controle de pagamentos de benefícios sociais e trabalhistas.",
+    "urlAcesso": null,
+    "icone": "money",
+    "ordem": 5,
+    "ativo": true
+  },
+  {
+    "id": 6,
+    "sigla": "SIAGS",
+    "nome": "Sistema de Autogestão em Saúde",
+    "descricao": "Sistema para autogestão de planos de saúde, marcação de consultas, autorizações e reembolsos.",
+    "urlAcesso": null,
+    "icone": "health",
+    "ordem": 6,
+    "ativo": true
+  },
+  {
+    "id": 7,
+    "sigla": "SIAUT",
+    "nome": "Sistema de Autoatendimento",
+    "descricao": "Sistema de autoatendimento para colaboradores, acesso a contracheques, férias, benefícios e documentos.",
+    "urlAcesso": null,
+    "icone": "desktop",
+    "ordem": 7,
+    "ativo": true
+  }
+]
+
+
+

@@ -1,154 +1,150 @@
 {
   "areas": [
     {
-      "idArea": 1,
+      "id": 1,
       "nome": "Tecnologia da Informação",
+      "sigla": "CETEC",
       "descricao": "Departamento de TI e Desenvolvimento de Sistemas",
-      "pessoasArea": 45
+      "quantidadePessoas": 45,
+      "ativo": true
     },
     {
-      "idArea": 2,
-      "nome": "Recursos Humanos",
+      "id": 2,
+      "nome": "Gestão de Pessoas",
+      "sigla": "GIPES",
       "descricao": "Departamento de Gestão de Pessoas",
-      "pessoasArea": 30
+      "quantidadePessoas": 30,
+      "ativo": true
     },
     {
-      "idArea": 3,
-      "nome": "Financeiro",
+      "id": 3,
+      "nome": "Administração e Finanças",
+      "sigla": "GIAFI",
       "descricao": "Departamento de Finanças e Contabilidade",
-      "pessoasArea": 25
+      "quantidadePessoas": 25,
+      "ativo": true
     },
     {
-      "idArea": 4,
-      "nome": "Capítulo de Codificação",
+      "id": 4,
+      "nome": "Atendimento e Operações",
+      "sigla": "GIATE",
       "descricao": "Equipe de desenvolvimento ágil de software",
-      "pessoasArea": 200
+      "quantidadePessoas": 200,
+      "ativo": true
     },
     {
-      "idArea": 5,
-      "nome": "Atendimento ao Cliente",
+      "id": 5,
+      "nome": "Rede de Agências",
+      "sigla": "REAGE",
       "descricao": "Central de atendimento e suporte",
-      "pessoasArea": 80
+      "quantidadePessoas": 80,
+      "ativo": true
     }
   ],
   "etapas": [
     {
-      "idEtapa": 1,
+      "id": 1,
       "nome": "Usabilidade",
       "descricao": "Avalie a facilidade de uso e a experiência de navegação no {sistema} — interface, menus e clareza das informações apresentadas.",
       "icone": "touch_app",
-      "cor": "#1976D2",
-      "ordem": 1
+      "ordem": 1,
+      "ativo": true
     },
     {
-      "idEtapa": 2,
+      "id": 2,
       "nome": "Eficiência",
       "descricao": "Avalie a rapidez, o desempenho e a capacidade do {sistema} de suportar sua produtividade no dia a dia.",
       "icone": "speed",
-      "cor": "#388E3C",
-      "ordem": 2
+      "ordem": 2,
+      "ativo": true
     },
     {
-      "idEtapa": 3,
+      "id": 3,
       "nome": "Aprendizado",
       "descricao": "Avalie a curva de aprendizado, o suporte recebido e a qualidade da documentação do {sistema}.",
       "icone": "school",
-      "cor": "#F57C00",
-      "ordem": 3
+      "ordem": 3,
+      "ativo": true
     },
     {
-      "idEtapa": 4,
+      "id": 4,
       "nome": "Eficácia",
       "descricao": "Avalie se o {sistema} permite concluir tarefas com sucesso, sua confiabilidade e consistência de resultados.",
       "icone": "verified",
-      "cor": "#7B1FA2",
-      "ordem": 4
+      "ordem": 4,
+      "ativo": true
     }
   ],
   "sistemas": [
     {
-      "idSistema": 1,
+      "id": 1,
       "sigla": "SISRH",
-      "categoria": "RH",
-      "nome": "SISRH",
+      "nome": "Sistema de Gestão de Recursos Humanos",
       "descricao": "Sistema de Gestão de Recursos Humanos — cadastro, movimentações e administração de pessoal.",
-      "tags": [
-        "Gestão de Pessoas",
-        "RH"
-      ],
-      "icone": "group"
+      "urlAcesso": null,
+      "icone": "group",
+      "ordem": 1,
+      "ativo": true
     },
     {
-      "idSistema": 2,
+      "id": 2,
       "sigla": "SIPON",
-      "categoria": "PONTO",
-      "nome": "SIPON",
+      "nome": "Sistema de Controle de Ponto",
       "descricao": "Sistema de Controle de Ponto — registro de jornada, horas extras, abonos e ocorrências.",
-      "tags": [
-        "Controle de Jornada",
-        "RH"
-      ],
-      "icone": "schedule"
+      "urlAcesso": null,
+      "icone": "schedule",
+      "ordem": 2,
+      "ativo": true
     },
     {
-      "idSistema": 3,
+      "id": 3,
       "sigla": "Integramais",
-      "categoria": "INTEGRAÇÃO",
-      "nome": "Integramais",
-      "descricao": "Sistema de Integração de Sistemas de Gestão de Pessoas — plataforma integradora dos sistemas de RH.",
-      "tags": [
-        "Integração",
-        "RH"
-      ],
-      "icone": "sync_alt"
+      "nome": "Sistema de Integração de Sistemas de Gestão de Pessoas",
+      "descricao": "Plataforma integradora dos sistemas de gestão de pessoas.",
+      "urlAcesso": null,
+      "icone": "sync_alt",
+      "ordem": 3,
+      "ativo": true
     },
     {
-      "idSistema": 4,
+      "id": 4,
       "sigla": "Atendimento",
-      "categoria": "ATENDIMENTO",
-      "nome": "Atendimento",
+      "nome": "Sistema de Atendimento",
       "descricao": "Sistema de Atendimento — gerenciamento de chamados, solicitações e suporte aos colaboradores.",
-      "tags": [
-        "Suporte",
-        "Atendimento"
-      ],
-      "icone": "headset_mic"
+      "urlAcesso": null,
+      "icone": "headset_mic",
+      "ordem": 4,
+      "ativo": true
     },
     {
-      "idSistema": 5,
+      "id": 5,
       "sigla": "SIABE",
-      "categoria": "BENEFÍCIOS",
-      "nome": "SIABE",
-      "descricao": "Sistema de Administração de Pagamentos de Benefícios — processamento e gestão de benefícios e pagamentos.",
-      "tags": [
-        "Pagamentos",
-        "Benefícios"
-      ],
-      "icone": "payments"
+      "nome": "Sistema Administração de Pagamentos de Benefícios",
+      "descricao": "Sistema de Administração de Pagamentos de Benefícios — processamento e gestão de benefícios.",
+      "urlAcesso": null,
+      "icone": "payments",
+      "ordem": 5,
+      "ativo": true
     },
     {
-      "idSistema": 6,
+      "id": 6,
       "sigla": "SIAGS",
-      "categoria": "SAÚDE",
-      "nome": "SIAGS",
+      "nome": "Sistema de Autogestão em Saúde",
       "descricao": "Sistema de Autogestão em Saúde — gestão do plano de saúde, consultas, reembolsos e rede credenciada.",
-      "tags": [
-        "Saúde",
-        "Autogestão"
-      ],
-      "icone": "favorite"
+      "urlAcesso": null,
+      "icone": "favorite",
+      "ordem": 6,
+      "ativo": true
     },
     {
-      "idSistema": 7,
+      "id": 7,
       "sigla": "SIAUT",
-      "categoria": "AUTOATENDIMENTO",
-      "nome": "SIAUT",
+      "nome": "Sistema de Autoatendimento",
       "descricao": "Sistema de Autoatendimento — portal do colaborador para solicitações, consultas e serviços de RH online.",
-      "tags": [
-        "Portal",
-        "Autoatendimento"
-      ],
-      "icone": "person_pin"
+      "urlAcesso": null,
+      "icone": "person_pin",
+      "ordem": 7,
+      "ativo": true
     }
   ],
   "pesquisa": [
