@@ -1,12 +1,1 @@
-{
-  "/api/pesquisa/lista/areas": "/areas",
-  "/api/pesquisa/lista/etapas": "/etapas",
-  "/api/pesquisa/lista/sistemas": "/sistemas",
-  "/api/pesquisa/lista": "/pesquisas",
-  "/api/pesquisa/cadastro/:id": "/pesquisas/:id",
-  "/api/pesquisa/cadastro": "/pesquisas",
-  "/api/pesquisa/resposta/:idPesquisa/consulta": "/respostas",
-  "/api/pesquisa/resposta": "/respostas",
-  "/api/pesquisa/dashboard/:id": "/dashboards/:id",
-  "/api/pesquisa": "/pesquisas"
-}
+{}

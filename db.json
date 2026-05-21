@@ -151,7 +151,7 @@
       "icone": "person_pin"
     }
   ],
-  "pesquisas": [
+  "pesquisa": [
     {
       "idPesquisa": 1,
       "id": 1,
@@ -619,7 +619,7 @@
       "questoes": []
     }
   ],
-  "respostas": [
+  "resposta": [
     {
       "idPesquisa": 1,
       "matricula": "c123456",
@@ -869,7 +869,7 @@
       "id": 1
     }
   ],
-  "dashboards": [
+  "dashboard": [
     {
       "id": 1,
       "quantidadeRespostas": 158,
