@@ -1,8 +1,8 @@
 # Documentação de API — Pesquisa de Satisfação Digital
 
-> Versão 2 · Atualizado em 2026-05-21  
-> Base URL (produção): `http://localhost/api`  
-> Base URL (desenvolvimento / mock): `http://localhost:3000`
+> Versão 3 · Atualizado em 2026-05-21  
+> Base URL (produção / back Java): `http://localhost:8080`  
+> Base URL (mock): `http://localhost:3000`
 
 ---
 
@@ -38,17 +38,17 @@
       "tituloQuestao": "O sistema é fácil de usar no dia a dia?",
       "obrigatoria": true,
       "alternativas": [
-        { "alternativaNumero": 1, "ordem": 1, "letra": "A", "valor": 100, "tituloAlternativa": "Totalmente Satisfatória" },
-        { "alternativaNumero": 2, "ordem": 2, "letra": "B", "valor": 70,  "tituloAlternativa": "Satisfatória" },
-        { "alternativaNumero": 3, "ordem": 3, "letra": "C", "valor": 40,  "tituloAlternativa": "Indiferente" },
-        { "alternativaNumero": 4, "ordem": 4, "letra": "D", "valor": 10,  "tituloAlternativa": "Insatisfatória" }
+        { "alternativaNumero": 1, "ordem": 1, "letra": "A", "valor": 1, "descricaoAlternativa": "Discordo totalmente" },
+        { "alternativaNumero": 2, "ordem": 2, "letra": "B", "valor": 2, "descricaoAlternativa": "Discordo parcialmente" },
+        { "alternativaNumero": 3, "ordem": 3, "letra": "C", "valor": 3, "descricaoAlternativa": "Concordo parcialmente" },
+        { "alternativaNumero": 4, "ordem": 4, "letra": "D", "valor": 4, "descricaoAlternativa": "Concordo totalmente" }
       ]
     }
   ]
 }
 ```
 
-> **Nota:** cada questão pertence a uma etapa (1–4) e a um sistema (`idSistema`). `tipoQuestao` pode ser `"M"` (múltipla escolha) ou `"S"` (subjetiva).
+> **Nota:** cada questão pertence a uma etapa (1–4) e a um sistema (`idSistema`). `tipoQuestao` pode ser `"M"` (múltipla escolha) ou `"S"` (subjetiva). A escala de valores vai de 1 (Discordo totalmente) a 4 (Concordo totalmente).
 
 **Response `201 Created`**
 ```json
@@ -74,31 +74,31 @@
 
 Retorna a pesquisa completa com todas as questões.
 
-**Exemplo:** `GET /api/pesquisa/cadastro/000000001`
+**Exemplo:** `GET /api/pesquisa/cadastro/1`
 
 **Response `200 OK`**
 ```json
 {
   "id": 1,
-  "nome": "Pesquisa de Satisfação Digital - MAIO",
-  "descricao": "Avaliação da experiência digital dos colaboradores com os sistemas internos.",
-  "area": "Capítulo de Codificação",
-  "pessoasArea": 200,
-  "status": "Aberta",
-  "dtInicio": "2026-06-01",
-  "dtFim": "2026-06-05",
+  "nome": "Pesquisa de Satisfação da Experiência Digital na Caixa - 2026",
+  "descricao": "Pesquisa anual para avaliar a satisfação dos colaboradores com os sistemas digitais corporativos.",
+  "area": "Tecnologia da Informação",
+  "pessoasArea": 120,
+  "status": 1,
+  "dtInicio": "2026-05-01",
+  "dtFim": "2026-06-30",
   "questoes": [
     {
       "numero": 1,
-      "etapa": "Usabilidade",
+      "etapa": 1,
       "idSistema": 1,
       "tipoQuestao": "M",
-      "tituloQuestao": "O sistema é fácil de usar no dia a dia?",
+      "tituloQuestao": "A interface do SISRH é fácil de usar e intuitiva?",
       "alternativas": [
-        { "alternativaNumero": 1, "tituloAlternativa": "Totalmente Satisfatória" },
-        { "alternativaNumero": 2, "tituloAlternativa": "Satisfatória" },
-        { "alternativaNumero": 3, "tituloAlternativa": "Indiferente" },
-        { "alternativaNumero": 4, "tituloAlternativa": "Insatisfatória" }
+        { "alternativaNumero": 1, "letra": "A", "valor": 1, "ordem": 1, "descricaoAlternativa": "Discordo totalmente" },
+        { "alternativaNumero": 2, "letra": "B", "valor": 2, "ordem": 2, "descricaoAlternativa": "Discordo parcialmente" },
+        { "alternativaNumero": 3, "letra": "C", "valor": 3, "ordem": 3, "descricaoAlternativa": "Concordo parcialmente" },
+        { "alternativaNumero": 4, "letra": "D", "valor": 4, "ordem": 4, "descricaoAlternativa": "Concordo totalmente" }
       ]
     }
   ]
@@ -107,14 +107,42 @@ Retorna a pesquisa completa com todas as questões.
 
 ---
 
-### 1.3 Consultar Pesquisa por ID + Sistema
+### 1.3 Consultar Pesquisa por ID + Sistema + Etapa
 
-**`GET /api/pesquisa?idPesquisa={id}&idSistema={idSistema}`**
+**`GET /api/pesquisa?idPesquisa={id}&idSistema={idSistema}&etapa={etapa}`**
 
-Retorna a pesquisa filtrando questões apenas do sistema informado.
+Retorna a pesquisa filtrando questões pelo sistema e etapa informados.
 
-**Variação com filtro de etapa:**  
-`GET /api/pesquisa?idPesquisa={id}&etapa={etapa}&idSistema={idSistema}`
+**Exemplo:** `GET /api/pesquisa?idPesquisa=1&idSistema=2&etapa=1`
+
+**Response `200 OK`**
+```json
+{
+  "id": 1,
+  "nome": "Pesquisa de Satisfação da Experiência Digital na Caixa - 2026",
+  "descricao": "Pesquisa anual para avaliar a satisfação dos colaboradores da Caixa com os sistemas digitais corporativos. Avalia 7 sistemas em 4 etapas: Usabilidade, Eficiência, Aprendizado e Eficácia. PESQUISA ANÔNIMA.",
+  "area": "Tecnologia da Informação",
+  "pessoasArea": 120,
+  "status": 1,
+  "dtInicio": "2026-05-01",
+  "dtFim": "2026-06-30",
+  "questoes": [
+    {
+      "numero": 6,
+      "idSistema": 2,
+      "etapa": 1,
+      "tipoQuestao": "M",
+      "tituloQuestao": "A interface do SIPON é fácil de usar para registrar o ponto?",
+      "alternativas": [
+        { "alternativaNumero": 1, "letra": "A", "valor": 1, "ordem": 1, "descricaoAlternativa": "Discordo totalmente" },
+        { "alternativaNumero": 2, "letra": "B", "valor": 2, "ordem": 2, "descricaoAlternativa": "Discordo parcialmente" },
+        { "alternativaNumero": 3, "letra": "C", "valor": 3, "ordem": 3, "descricaoAlternativa": "Concordo parcialmente" },
+        { "alternativaNumero": 4, "letra": "D", "valor": 4, "ordem": 4, "descricaoAlternativa": "Concordo totalmente" }
+      ]
+    }
+  ]
+}
+```
 
 ---
 
@@ -162,44 +190,49 @@ Retorna todas as pesquisas. Aceita filtros opcionais via query string.
 **Response `200 OK`**
 ```json
 [
-  {
-    "idArea": 1,
-    "nome": "Tecnologia da Informação",
-    "descricao": "Departamento de TI e Desenvolvimento",
-    "pessoasArea": 45
-  },
-  {
-    "idArea": 2,
-    "nome": "Recursos Humanos",
-    "descricao": "Departamento de Gestão de Pessoas",
-    "pessoasArea": 115
-  }
+  { "id": 1, "nome": "Tecnologia da Informação",   "sigla": "CETEC", "descricao": "Centralizadora de Tecnologia",                         "quantidadePessoas": 120, "ativo": true },
+  { "id": 2, "nome": "Gestão de Pessoas",           "sigla": "GIPES", "descricao": "Gerência de Gestão de Pessoas",                        "quantidadePessoas": 45,  "ativo": true },
+  { "id": 3, "nome": "Atendimento e Operações",     "sigla": "GIATE", "descricao": "Gerência de Atendimento",                              "quantidadePessoas": 200, "ativo": true },
+  { "id": 4, "nome": "Administração e Finanças",    "sigla": "GIAFI", "descricao": "Gerência de Administração e Finanças",                  "quantidadePessoas": 35,  "ativo": true },
+  { "id": 5, "nome": "Saúde e Qualidade de Vida",   "sigla": "GISQV", "descricao": "Gerência de Saúde e Qualidade de Vida",                "quantidadePessoas": 25,  "ativo": true },
+  { "id": 6, "nome": "Rede de Agências",            "sigla": "REAGE", "descricao": "Rede de Agências e Unidades de Atendimento",           "quantidadePessoas": 350, "ativo": true },
+  { "id": 7, "nome": "Controladoria e Compliance",  "sigla": "GICOC", "descricao": "Gerência de Controladoria e Compliance",               "quantidadePessoas": 30,  "ativo": true },
+  { "id": 8, "nome": "Habitação",                   "sigla": "GIHAB", "descricao": "Gerência de Habitação",                                "quantidadePessoas": 80,  "ativo": true }
 ]
 ```
+
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `id` | number | ID da área |
+| `sigla` | string | Sigla da gerência |
+| `quantidadePessoas` | number | Número de colaboradores na área |
+| `ativo` | boolean | Se a área está ativa |
 
 ---
 
 ### 2.2 Listar Etapas
 
-**`GET /api/pesquisa/lista/etapas`**
+**`GET /api/etapas`**
 
 As 4 dimensões de avaliação por sistema.
 
 **Response `200 OK`**
 ```json
 [
-  { "idEtapa": 1, "nome": "Usabilidade",  "descricao": "Facilidade de uso e intuitividade",      "icone": "touch_app", "cor": "#1976D2", "ordem": 1 },
-  { "idEtapa": 2, "nome": "Eficiência",   "descricao": "Desempenho e velocidade",                "icone": "speed",     "cor": "#388E3C", "ordem": 2 },
-  { "idEtapa": 3, "nome": "Aprendizado",  "descricao": "Curva de aprendizado e recursos de ajuda","icone": "school",    "cor": "#F57C00", "ordem": 3 },
-  { "idEtapa": 4, "nome": "Eficácia",     "descricao": "Resultados e impacto no trabalho",        "icone": "verified",  "cor": "#7B1FA2", "ordem": 4 }
+  { "id": 1, "nome": "Usabilidade",  "descricao": "Facilidade de uso, interface intuitiva e navegação do sistema.",         "icone": "mouse", "ordem": 1, "ativo": true },
+  { "id": 2, "nome": "Eficiência",   "descricao": "Rapidez, desempenho, tempo de resposta e produtividade com o sistema.",  "icone": "bolt",  "ordem": 2, "ativo": true },
+  { "id": 3, "nome": "Aprendizado",  "descricao": "Facilidade de aprendizado, curva de aprendizado e suporte disponível.",  "icone": "book",  "ordem": 3, "ativo": true },
+  { "id": 4, "nome": "Eficácia",     "descricao": "Resultados e impacto no trabalho.",                                      "icone": "check", "ordem": 4, "ativo": true }
 ]
 ```
+
+> **Atenção:** endpoint mudou de `/api/pesquisa/lista/etapas` para `/api/etapas`. Campos `id` (era `idEtapa`), sem `cor`, adicionado `ativo`.
 
 ---
 
 ### 2.3 Listar Sistemas
 
-**`GET /api/pesquisa/lista/sistemas`**
+**`GET /api/sistemas`**
 
 Os sistemas de TI disponíveis para avaliação.
 
@@ -207,110 +240,111 @@ Os sistemas de TI disponíveis para avaliação.
 ```json
 [
   {
-    "idSistema": 1,
+    "id": 1,
     "sigla": "SISRH",
-    "categoria": "RH",
-    "nome": "SISRH",
-    "descricao": "Sistema de Gestão de Recursos Humanos — cadastro, movimentações e administração de pessoal.",
-    "tags": ["Gestão de Pessoas", "RH"],
-    "icone": "group"
+    "nome": "Sistema de Gestão de Recursos Humanos",
+    "descricao": "Sistema corporativo para gestão de recursos humanos, cadastro funcional, movimentação e informações de pessoal.",
+    "urlAcesso": null,
+    "icone": "user",
+    "ordem": 1,
+    "ativo": true
   },
   {
-    "idSistema": 2,
+    "id": 2,
     "sigla": "SIPON",
-    "categoria": "PONTO",
-    "nome": "SIPON",
-    "descricao": "Sistema de Controle de Ponto — registro de jornada, horas extras, abonos e ocorrências.",
-    "tags": ["Controle de Jornada", "RH"],
-    "icone": "schedule"
+    "nome": "Sistema de Controle de Ponto",
+    "descricao": "Sistema para registro e controle de ponto eletrônico, jornada de trabalho, horas extras e banco de horas.",
+    "urlAcesso": null,
+    "icone": "clock",
+    "ordem": 2,
+    "ativo": true
   },
   {
-    "idSistema": 3,
+    "id": 3,
     "sigla": "Integramais",
-    "categoria": "INTEGRAÇÃO",
-    "nome": "Integramais",
-    "descricao": "Plataforma integradora dos sistemas de Gestão de Pessoas.",
-    "tags": ["Integração", "RH"],
-    "icone": "sync_alt"
+    "nome": "Sistema de Integração de Sistemas de Gestão de Pessoas",
+    "descricao": "Plataforma integradora dos sistemas de gestão de pessoas, centralizando informações de múltiplos sistemas.",
+    "urlAcesso": null,
+    "icone": "link",
+    "ordem": 3,
+    "ativo": true
   },
   {
-    "idSistema": 4,
+    "id": 4,
     "sigla": "Atendimento",
-    "categoria": "ATENDIMENTO",
-    "nome": "Atendimento",
-    "descricao": "Sistema de gerenciamento de chamados, solicitações e suporte aos colaboradores.",
-    "tags": ["Suporte", "Atendimento"],
-    "icone": "headset_mic"
+    "nome": "Sistema de Atendimento",
+    "descricao": "Sistema de gestão de atendimento ao cliente interno e externo, protocolos e solicitações.",
+    "urlAcesso": null,
+    "icone": "phone",
+    "ordem": 4,
+    "ativo": true
   },
   {
-    "idSistema": 5,
+    "id": 5,
     "sigla": "SIABE",
-    "categoria": "BENEFÍCIOS",
-    "nome": "SIABE",
-    "descricao": "Sistema de Administração de Pagamentos de Benefícios — processamento e gestão de benefícios.",
-    "tags": ["Pagamentos", "Benefícios"],
-    "icone": "payments"
+    "nome": "Sistema Administração de Pagamentos de Benefícios",
+    "descricao": "Sistema para administração e controle de pagamentos de benefícios sociais e trabalhistas.",
+    "urlAcesso": null,
+    "icone": "money",
+    "ordem": 5,
+    "ativo": true
   },
   {
-    "idSistema": 6,
+    "id": 6,
     "sigla": "SIAGS",
-    "categoria": "SAÚDE",
-    "nome": "SIAGS",
-    "descricao": "Sistema de Autogestão em Saúde — plano de saúde, consultas, reembolsos e rede credenciada.",
-    "tags": ["Saúde", "Autogestão"],
-    "icone": "favorite"
+    "nome": "Sistema de Autogestão em Saúde",
+    "descricao": "Sistema para autogestão de planos de saúde, marcação de consultas, autorizações e reembolsos.",
+    "urlAcesso": null,
+    "icone": "health",
+    "ordem": 6,
+    "ativo": true
   },
   {
-    "idSistema": 7,
+    "id": 7,
     "sigla": "SIAUT",
-    "categoria": "AUTOATENDIMENTO",
-    "nome": "SIAUT",
-    "descricao": "Portal do colaborador para solicitações, consultas e serviços de RH online.",
-    "tags": ["Portal", "Autoatendimento"],
-    "icone": "person_pin"
+    "nome": "Sistema de Autoatendimento",
+    "descricao": "Sistema de autoatendimento para colaboradores, acesso a contracheques, férias, benefícios e documentos.",
+    "urlAcesso": null,
+    "icone": "desktop",
+    "ordem": 7,
+    "ativo": true
   }
 ]
 ```
+
+> **Atenção:** endpoint mudou de `/api/pesquisa/lista/sistemas` para `/api/sistemas`. Campos `id` (era `idSistema`), sem `categoria` e `tags`, adicionados `urlAcesso`, `ordem`, `ativo`. `nome` agora é o nome completo do sistema.
 
 ---
 
 ## 3. Resposta de Pesquisa
 
-### 3.1 Consultar Resposta Existente
+### 3.1 Consultar Resposta por Matrícula
 
 Verifica se um colaborador já respondeu a pesquisa.
 
-**Por matrícula:**  
-`GET /api/pesquisa/resposta/{idPesquisa}/consulta?matricula=C199999`
+**`GET /api/pesquisa/resposta/{idPesquisa}/consulta?matricula={matricula}`**
 
-**Por ID de resposta:**  
-`GET /api/pesquisa/resposta/{idPesquisa}/consulta?resposta=5353`
+**Exemplo:** `GET /api/pesquisa/resposta/1/consulta?matricula=c158543`
 
 **Response `200 OK`**
 ```json
 {
-  "idResposta": 1,
+  "idResposta": 100,
   "idPesquisa": 1,
   "idArea": 2,
-  "dtHoraResposta": "2026-05-18T14:30:00Z",
-  "enderecoIp": "128.0.0.1",
+  "dtHoraResposta": "2026-06-10",
+  "enderecoIp": "128.000.001.001",
   "finalizada": true,
   "questoes": [
     {
       "numero": 1,
-      "titulo": "O sistema é fácil de usar no dia a dia?",
+      "titulo": "A interface do SISRH é fácil de usar e intuitiva?",
       "tipoQuestao": "M",
       "etapa": 1,
       "alternativas": [
-        { "ordem": 1, "letra": "A", "alternativaNumero": 1, "valor": 20 }
-      ]
-    },
-    {
-      "numero": 6,
-      "titulo": "Descreva sua experiência com o sistema.",
-      "tipoQuestao": "S",
-      "etapa": 2,
-      "respostaSubjetiva": "O sistema poderia ter mais tutoriais."
+        { "alternativaNumero": 1, "letra": "A", "valor": 1, "ordem": 1, "descricaoAlternativa": "Discordo totalmente" }
+      ],
+      "respostaSubjetiva": null
     }
   ]
 }
@@ -318,7 +352,17 @@ Verifica se um colaborador já respondeu a pesquisa.
 
 ---
 
-### 3.2 Gravar Resposta
+### 3.2 Consultar Resposta por ID
+
+**`GET /api/pesquisa/resposta/{idPesquisa}/consulta/resposta?idResposta={idResposta}`**
+
+**Exemplo:** `GET /api/pesquisa/resposta/1/consulta/resposta?idResposta=100`
+
+**Response `200 OK`** — mesmo formato do item 3.1.
+
+---
+
+### 3.3 Gravar Resposta
 
 **`POST /api/pesquisa/resposta`**
 
@@ -326,39 +370,78 @@ Verifica se um colaborador já respondeu a pesquisa.
 ```json
 {
   "idPesquisa": 1,
-  "dtHoraResposta": "2026-05-18T14:30:00Z",
+  "matricula": "c158543",
+  "dtHoraResposta": "2026-06-10",
   "questoes": [
     {
       "numero": 1,
       "tipoQuestao": "M",
       "alternativas": [
         { "alternativaNumero": 1 }
-      ]
+      ],
+      "respostaSubjetiva": ""
     },
     {
       "numero": 9,
       "tipoQuestao": "S",
+      "alternativas": [],
       "respostaSubjetiva": "O sistema poderia ter mais tutoriais."
     }
   ]
 }
 ```
 
-**Response `201 Created`**
+> **Nota:** campo `matricula` é obrigatório no request. Para questões subjetivas (`"S"`), `alternativas` fica vazio e `respostaSubjetiva` contém o texto. Para questões de múltipla escolha (`"M"`), informar apenas `alternativaNumero`.
 
-Retorna o objeto completo da resposta gravada (mesmo formato do item 3.1).
+**Response `201 Created`**
+```json
+{
+  "idResposta": 100,
+  "idPesquisa": 1,
+  "idArea": 2,
+  "dtHoraResposta": "2026-06-10",
+  "enderecoIp": "128.000.001.001",
+  "finalizada": true,
+  "questoes": [
+    {
+      "numero": 1,
+      "titulo": "A interface do SISRH é fácil de usar e intuitiva?",
+      "tipoQuestao": "M",
+      "etapa": 1,
+      "alternativas": [
+        { "alternativaNumero": 1, "letra": "A", "valor": 1, "ordem": 1, "descricaoAlternativa": "Discordo totalmente" }
+      ],
+      "respostaSubjetiva": null
+    }
+  ]
+}
+```
 
 ---
 
 ## Fluxo do Colaborador (resumo)
 
 ```
-1. Identificação        → POST (sessionStorage: matrícula, idArea, idPesquisa)
-2. Seleção de Sistemas  → GET /api/pesquisa/lista/sistemas
+1. Identificação        → (sessionStorage: matrícula, idArea, idPesquisa)
+2. Seleção de Sistemas  → GET /api/sistemas
                           (sessionStorage: sistemasSelecionados, sistemaAtualIndex)
-3. Avaliação            → GET /api/pesquisa/cadastro/{id}  (4 etapas × por sistema)
-4. Conclusão            → POST /api/pesquisa/resposta
+3. Avaliação            → GET /api/pesquisa?idPesquisa={id}&idSistema={id}&etapa={etapa}
+                          (4 etapas × por sistema)
+4. Conclusão            → POST /api/pesquisa/resposta  (com matrícula)
 ```
 
 **Cálculo de questões:** 3 questões × 4 etapas × quantidade de sistemas selecionados = total de questões.
 
+---
+
+## Resumo das Mudanças (v2 → v3)
+
+| Endpoint anterior | Endpoint atual | Mudança |
+|---|---|---|
+| `GET /api/pesquisa/lista/etapas` | `GET /api/etapas` | URL alterada; `idEtapa` → `id`; sem `cor`; adicionado `ativo` |
+| `GET /api/pesquisa/lista/sistemas` | `GET /api/sistemas` | URL alterada; `idSistema` → `id`; sem `categoria`/`tags`; adicionados `urlAcesso`, `ordem`, `ativo` |
+| `GET /api/pesquisa/lista/areas` | `GET /api/pesquisa/lista/areas` | Mesma URL; `idArea` → `id`; adicionados `sigla`, `ativo`; `pessoasArea` → `quantidadePessoas` |
+| `tituloAlternativa` (nas alternativas) | `descricaoAlternativa` | Campo renomeado em toda a API |
+| Escala de valores `100/70/40/10` | Escala `1/2/3/4` | Valores das alternativas reescalados |
+| `POST /api/pesquisa/resposta` sem matrícula | `POST /api/pesquisa/resposta` com `matricula` | Campo `matricula` adicionado ao request |
+| `GET .../consulta?resposta={id}` | `GET .../consulta/resposta?idResposta={id}` | Rota e parâmetro renomeados |
